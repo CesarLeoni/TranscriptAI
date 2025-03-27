@@ -1,0 +1,8 @@
+# do this : pip install -r requirements.txt
+
+streamlit
+fastapi
+uvicorn
+requests
+openai-whisper
+torch
