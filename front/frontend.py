@@ -5,10 +5,10 @@ from docx import Document
 from fpdf import FPDF
 
 # URL of your backend on laptop
-BACKEND_URL = "http://127.0.0.1:8000/upload"
+#BACKEND_URL = "http://127.0.0.1:8000/upload"
 
 # production link
-#BACKEND_URL = "https://transcriptai.onrender.com/upload"
+BACKEND_URL = "https://transcriptai.onrender.com/upload"
 
 # Title of the app
 st.title("Audio Transcription + Document Generation by Cesar")

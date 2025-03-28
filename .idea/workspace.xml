@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="nice version (working i'd say) + tweaks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743117604340</updated>
       <workItem from="1743117611328" duration="1003000" />
-      <workItem from="1743118636943" duration="14629000" />
+      <workItem from="1743118636943" duration="15008000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -140,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743129892685</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="nice version (working i'd say) + tweaks">
+      <option name="closed" value="true" />
+      <created>1743134618023</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743134618023</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +157,7 @@
     <MESSAGE value="google ads added" />
     <MESSAGE value="some push" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="nice version (working i'd say) + tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="nice version (working i'd say) + tweaks" />
   </component>
 </project>
