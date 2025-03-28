@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="proper backend url for production">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="added README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -55,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743117604340</updated>
       <workItem from="1743117611328" duration="1003000" />
-      <workItem from="1743118636943" duration="15443000" />
+      <workItem from="1743118636943" duration="16103000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -153,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743135014541</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added README.md">
+      <option name="closed" value="true" />
+      <created>1743135412070</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1743135412071</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +181,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="nice version (working i'd say) + tweaks" />
     <MESSAGE value="proper backend url for production" />
-    <option name="LAST_COMMIT_MESSAGE" value="proper backend url for production" />
+    <MESSAGE value="added README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added README.md" />
   </component>
 </project>
