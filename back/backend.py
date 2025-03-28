@@ -22,6 +22,7 @@ SUPPORTED_FORMATS = ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
+
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Transcript API!"}
