@@ -11,3 +11,5 @@ dotenv
 python-docx
 python-multipart
 fpdf
+sounddevice
+numpy
