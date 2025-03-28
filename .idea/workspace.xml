@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="/upload added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="google ads added">
+      <change afterPath="$PROJECT_DIR$/front/ads.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743117604340</updated>
       <workItem from="1743117611328" duration="1003000" />
-      <workItem from="1743118636943" duration="8663000" />
+      <workItem from="1743118636943" duration="9182000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -97,7 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743126377204</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="google ads added">
+      <option name="closed" value="true" />
+      <created>1743127448362</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743127448362</updated>
+    </task>
+    <task id="LOCAL-00007" summary="google ads added">
+      <option name="closed" value="true" />
+      <created>1743127849866</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743127849866</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +124,7 @@
     <MESSAGE value="changes" />
     <MESSAGE value="working - to try on internet" />
     <MESSAGE value="/upload added" />
-    <option name="LAST_COMMIT_MESSAGE" value="/upload added" />
+    <MESSAGE value="google ads added" />
+    <option name="LAST_COMMIT_MESSAGE" value="google ads added" />
   </component>
 </project>
