@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="added patreon">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/DejaVuSansCondensed.ttf" afterDir="false" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="added profile and voice recording">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +66,7 @@
       <workItem from="1743117611328" duration="1003000" />
       <workItem from="1743118636943" duration="16457000" />
       <workItem from="1743151750287" duration="3354000" />
-      <workItem from="1743185421000" duration="4036000" />
+      <workItem from="1743185421000" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -185,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743136102771</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added profile and voice recording">
+      <option name="closed" value="true" />
+      <created>1743192846774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1743192846774</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +206,7 @@
     <MESSAGE value="proper backend url for production" />
     <MESSAGE value="added README.md" />
     <MESSAGE value="added patreon" />
-    <option name="LAST_COMMIT_MESSAGE" value="added patreon" />
+    <MESSAGE value="added profile and voice recording" />
+    <option name="LAST_COMMIT_MESSAGE" value="added profile and voice recording" />
   </component>
 </project>
