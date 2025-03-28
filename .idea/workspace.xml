@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="google ads added">
-      <change afterPath="$PROJECT_DIR$/front/ads.txt" afterDir="false" />
-    </list>
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="some push" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743117604340</updated>
       <workItem from="1743117611328" duration="1003000" />
-      <workItem from="1743118636943" duration="9182000" />
+      <workItem from="1743118636943" duration="9826000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -113,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743127849866</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some push">
+      <option name="closed" value="true" />
+      <created>1743129594860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743129594860</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +131,7 @@
     <MESSAGE value="working - to try on internet" />
     <MESSAGE value="/upload added" />
     <MESSAGE value="google ads added" />
-    <option name="LAST_COMMIT_MESSAGE" value="google ads added" />
+    <MESSAGE value="some push" />
+    <option name="LAST_COMMIT_MESSAGE" value="some push" />
   </component>
 </project>
