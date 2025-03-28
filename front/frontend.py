@@ -7,7 +7,7 @@ from docx import Document
 #BACKEND_URL = "http://127.0.0.1:8000/upload"
 
 # production link
-BACKEND_URL = "https://transcriptai.onrender.com"
+BACKEND_URL = "https://transcriptai.onrender.com/upload"
 
 # Title of the app
 st.title("Audio Transcription and Word Document by Cesar")

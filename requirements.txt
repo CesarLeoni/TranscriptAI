@@ -4,8 +4,8 @@ streamlit
 fastapi
 uvicorn
 requests
-openai-whisper
-torch
+# openai-whisper
+# torch
 openai
 dotenv
 python-docx
