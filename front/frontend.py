@@ -50,13 +50,15 @@ if uploaded_file:
 
     # Google Ads
     st.markdown("""
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2114950528659296" 
+            crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
          style="display:block"
-         data-ad-client="ca-pub-XXXXX"
-         data-ad-slot="XXXXX"
+         data-ad-client="ca-pub-2114950528659296" 
+         data-ad-slot="XXXXX" 
          data-ad-format="auto"></ins>
     <script>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     """, unsafe_allow_html=True)
+
