@@ -8,4 +8,6 @@ openai-whisper
 torch
 openai
 dotenv
-docx
+python-docx
+python-multipart
+

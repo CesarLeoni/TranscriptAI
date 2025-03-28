@@ -3,11 +3,14 @@ import requests
 import io
 from docx import Document
 
-# URL of your backend
-BACKEND_URL = "https://your-backend-url.com/upload"  # Replace with actual URL
+# URL of your backend on laptop
+#BACKEND_URL = "http://127.0.0.1:8000/upload"
+
+# production link
+BACKEND_URL = "https://transcriptai.onrender.com"
 
 # Title of the app
-st.title("Audio Transcription and Word Document")
+st.title("Audio Transcription and Word Document by Cesar")
 
 # Upload the audio file
 uploaded_file = st.file_uploader("Upload an audio file", type=["mp3", "wav", "m4a"])
@@ -18,7 +21,7 @@ if uploaded_file:
 
     if st.button("Transcribe"):
         # Send audio file to backend for transcription
-        files = {"file": uploaded_file.getvalue()}
+        files = {"file": uploaded_file}
         response = requests.post(BACKEND_URL, files=files)
 
         if response.status_code == 200:
