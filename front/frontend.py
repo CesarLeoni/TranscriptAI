@@ -10,7 +10,7 @@ from docx import Document
 BACKEND_URL = "https://transcriptai.onrender.com/upload"
 
 # Title of the app
-st.title("Audio Transcription and Word Document by Cesar")
+st.title("Audio Transcription and Word Document generation by Cesar")
 
 # Upload the audio file
 uploaded_file = st.file_uploader("Upload an audio file", type=["mp3", "wav", "m4a"])
