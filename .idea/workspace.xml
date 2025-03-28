@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="nice version (working i'd say) + tweaks" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="proper backend url for production">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1743117604340</updated>
       <workItem from="1743117611328" duration="1003000" />
-      <workItem from="1743118636943" duration="15008000" />
+      <workItem from="1743118636943" duration="15443000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -143,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743134618023</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="proper backend url for production">
+      <option name="closed" value="true" />
+      <created>1743135014541</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743135014541</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +168,7 @@
     <MESSAGE value="some push" />
     <MESSAGE value="test" />
     <MESSAGE value="nice version (working i'd say) + tweaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="nice version (working i'd say) + tweaks" />
+    <MESSAGE value="proper backend url for production" />
+    <option name="LAST_COMMIT_MESSAGE" value="proper backend url for production" />
   </component>
 </project>
