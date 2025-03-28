@@ -6,3 +6,6 @@ uvicorn
 requests
 openai-whisper
 torch
+openai
+dotenv
+docx
