@@ -63,10 +63,10 @@ def record_audio(duration=st.session_state.duration, samplerate=44100):
     return file_like
 
 # URL of your backend on laptop
-BACKEND_URL = "http://127.0.0.1:8000/upload"
+#BACKEND_URL = "http://127.0.0.1:8000/upload"
 
 # production link
-#BACKEND_URL = "https://transcriptai.onrender.com/upload"
+BACKEND_URL = "https://transcriptai.onrender.com/upload"
 
 # Title of the app
 st.title("Audio Transcription + Document Generation by Cesar")
