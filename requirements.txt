@@ -4,7 +4,6 @@ streamlit
 fastapi
 uvicorn
 requests
-
 # openai-whisper
 # torch
 openai
@@ -13,6 +12,4 @@ python-docx
 python-multipart
 fpdf
 sounddevice
-
-
 numpy
