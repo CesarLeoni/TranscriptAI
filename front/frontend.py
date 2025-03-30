@@ -195,7 +195,7 @@ if st.session_state.transcription and st.session_state.current_file:
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Construct the path to the font file relative to the current directory
-    font_path = os.path.join(current_dir,'front', 'DejaVuSansCondensed.ttf')
+    font_path = os.path.join(current_dir, 'DejaVuSansCondensed.ttf')
 
     # Create PDF document
     pdf = FPDF()
