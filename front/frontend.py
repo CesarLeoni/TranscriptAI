@@ -191,10 +191,16 @@ if st.session_state.transcription and st.session_state.current_file:
     doc.save(doc_io)
     doc_io.seek(0)
 
+    # Get the current working directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Construct the path to the font file relative to the current directory
+    font_path = os.path.join(current_dir, 'DejaVuSansCondensed.ttf')
+
     # Create PDF document
     pdf = FPDF()
     pdf.add_page()
-    pdf.add_font("DejaVu", "", "DejaVuSansCondensed.ttf", uni=True)
+    pdf.add_font("DejaVu", "", font_path, uni=True)
     pdf.set_font("DejaVu", size=20)
     pdf.cell(200, 10, txt=f"{st.session_state.current_file.name} Transcription", ln=True, align='C')
 
