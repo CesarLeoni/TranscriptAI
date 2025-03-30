@@ -169,10 +169,10 @@ if st.button("Record Audio"):
 if st.session_state.current_file and st.button("Transcribe"):
     # Send audio file to backend for transcription
     files = {"file": st.session_state.current_file}
-    response = requests.post(BACKEND_URL, files=files)
+    response = requests.post(BACKEND_URL, files=files, timeout=120)
 
     if response.status_code == 200:
-            # Convert transcription to Word document
+        # Convert transcription to Word document
         st.session_state.transcription = response.json().get("transcript")
     else:
         st.error("Error during transcription.")
