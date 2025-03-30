@@ -255,44 +255,39 @@ with col2:
                 gap: 10px;
                 padding: 10px;
                 border-radius: 8px;
-                color: black; /* Set text color to black */
+                color: black;
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 16px;
                 width: 100%;
                 text-align: center;
-                cursor: pointer; /* Make it clickable */
+                cursor: pointer;
             }
 
-            .linkedin { background-color: #9adaf5; 
-            color: blue; /* Set text color to black */}
-            
+            .linkedin { background-color: #9adaf5; color: blue; }
             .github { background-color: #f59453; }
-            
-            .portfolio { background-color: #8b00c7; 
-            color: yellow; /* Set text color to black */}
+            .portfolio { background-color: #8b00c7; color: yellow; }
 
             .link-button:hover { opacity: 0.8; }
 
             .icon { width: 24px; height: 24px; }
-
         </style>
 
-        <div class="link-button linkedin" onclick="window.open('https://www.linkedin.com/in/cesarleoni29/', '_blank')">
+        <a class="link-button linkedin" href="https://www.linkedin.com/in/cesarleoni29/" target="_blank">
             <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"> LinkedIn
-        </div>
+        </a>
 
         <br>
 
-        <div class="link-button github" onclick="window.open('https://github.com/CesarLeoni', '_blank')">
+        <a class="link-button github" href="https://github.com/CesarLeoni" target="_blank">
             <img class="icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"> GitHub
-        </div>
+        </a>
 
         <br>
 
-        <div class="link-button portfolio" onclick="window.open('https://leoni-cesar-portfolio.netlify.app/', '_blank')">
+        <a class="link-button portfolio" href="https://leoni-cesar-portfolio.netlify.app/" target="_blank">
             <img class="icon" src="https://cdn-icons-png.flaticon.com/512/616/616489.png"> Portfolio
-        </div>
+        </a>
         """,
         unsafe_allow_html=True
     )
