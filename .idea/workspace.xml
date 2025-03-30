@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="relative path for font again again">
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="simpler front that actually works hopefully">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
     </list>
@@ -69,7 +69,7 @@
       <workItem from="1743151750287" duration="3354000" />
       <workItem from="1743185421000" duration="6866000" />
       <workItem from="1743299199334" duration="1163000" />
-      <workItem from="1743300457170" duration="862000" />
+      <workItem from="1743300457170" duration="1503000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -271,7 +271,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743300967701</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="simpler front that actually works hopefully">
+      <option name="closed" value="true" />
+      <created>1743301488590</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1743301488590</updated>
+    </task>
+    <task id="LOCAL-00027" summary="simpler front that actually works hopefully">
+      <option name="closed" value="true" />
+      <created>1743301933239</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1743301933239</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +315,7 @@
     <MESSAGE value="relative path for font" />
     <MESSAGE value="relative path for font again" />
     <MESSAGE value="relative path for font again again" />
-    <option name="LAST_COMMIT_MESSAGE" value="relative path for font again again" />
+    <MESSAGE value="simpler front that actually works hopefully" />
+    <option name="LAST_COMMIT_MESSAGE" value="simpler front that actually works hopefully" />
   </component>
 </project>

@@ -26,7 +26,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 # Call GPT-3.5 or GPT-4 to clean up the transcription text
 def clean_text_with_gpt(text):
     prompt = (f"Please clean up the following transcription text:\n\n{text}\n\nMake sure it is properly spaced, no all-caps, and formatted correctly. "
-              f"Make sure it is prepared to be added to a word document and look nice.")
+              f"Make sure it is prepared to be added to a word document and look nice. Do not add anything else! I don't want any comments, just the text I provided but nicely formatted.")
 
     chat_completion = client.chat.completions.create(
         messages=[
