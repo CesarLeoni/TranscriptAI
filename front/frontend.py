@@ -8,6 +8,10 @@ import sounddevice as sd
 import numpy as np
 import wave
 import time
+import os
+
+print(os.getcwd())
+print(os.listdir())
 
 # Initialize session state for storing transcription
 if 'transcription' not in st.session_state:
@@ -223,6 +227,9 @@ if st.session_state.transcription and st.session_state.current_file:
             mime="application/pdf",
             use_container_width=True
         )
+
+
+
 
 # Adaugă spațiu înainte de secțiunea de contact
 st.markdown("<br><br>", unsafe_allow_html=True)
