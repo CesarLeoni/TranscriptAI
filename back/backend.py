@@ -23,6 +23,21 @@ UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
+# Call GPT-3.5 or GPT-4 to clean up the transcription text
+def clean_text_with_gpt(text):
+    prompt = (f"Please clean up the following transcription text:\n\n{text}\n\nMake sure it is properly spaced, no all-caps, and formatted correctly. "
+              f"Make sure it is prepared to be added to a word document and look nice.")
+
+    chat_completion = client.chat.completions.create(
+        messages=[
+            {"role": "system", "content": prompt},
+        ],
+        model="gpt-4o-mini-2024-07-18",
+    )
+    response = chat_completion.choices[0].message.content.strip()
+    return response
+
+
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the Transcript API!"}
@@ -66,10 +81,12 @@ async def upload_audio(file: UploadFile = File(...)):
                 model="whisper-1",
                 file=f,
                 response_format="verbose_json"  # Request verbose JSON response
-        )
+            )
 
-        # Extract the transcribed text and detected language
+        # Extract the transcribed text
         text = response.text
+
+        text = clean_text_with_gpt(text)
 
         # Here you'd process the file (transcription logic)
         # Replace this with actual transcription logic
