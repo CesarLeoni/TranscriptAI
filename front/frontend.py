@@ -146,25 +146,25 @@ if uploaded_file:
     st.audio(uploaded_file, format="audio/wav")
     st.session_state.current_file = uploaded_file
 
-st.session_state.duration = st.slider("Or select recording duration (seconds) and start recording", min_value=1, max_value=30, value=5)
-
-if st.button("Record Audio"):
-    recorded_audio = record_audio()
-
-    if recorded_audio:  # Only proceed if recording was successful
-        # Create a copy of the audio data for playback
-        playback_audio = io.BytesIO(recorded_audio.getvalue())
-        st.audio(playback_audio, format="audio/wav")
-
-        # Reset and store the original for transcription
-        recorded_audio.seek(0)
-        st.session_state.current_file = recorded_audio
-
-        # Clear any previous transcription
-        st.session_state.transcription = None
-        st.success("Audio recorded successfully! Click 'Transcribe' to process.")
-    else:
-        st.error("Recording failed. Please try again.")
+# st.session_state.duration = st.slider("Or select recording duration (seconds) and start recording", min_value=1, max_value=30, value=5)
+#
+# if st.button("Record Audio"):
+#     recorded_audio = record_audio()
+#
+#     if recorded_audio:  # Only proceed if recording was successful
+#         # Create a copy of the audio data for playback
+#         playback_audio = io.BytesIO(recorded_audio.getvalue())
+#         st.audio(playback_audio, format="audio/wav")
+#
+#         # Reset and store the original for transcription
+#         recorded_audio.seek(0)
+#         st.session_state.current_file = recorded_audio
+#
+#         # Clear any previous transcription
+#         st.session_state.transcription = None
+#         st.success("Audio recorded successfully! Click 'Transcribe' to process.")
+#     else:
+#         st.error("Recording failed. Please try again.")
 
 if st.session_state.current_file and st.button("Transcribe"):
     # Send audio file to backend for transcription
@@ -177,10 +177,9 @@ if st.session_state.current_file and st.button("Transcribe"):
     else:
         st.error("Error during transcription.")
 
-# Display download buttons only if transcription exists in session state
-if st.session_state.transcription and st.session_state.current_file:
-    st.success("Transcription completed!")
-    # Rest of your download button code...
+
+# Function to generate Word document
+def generate_word():
     # Convert transcription to Word document
     doc = Document()
     doc.add_heading(f"{st.session_state.current_file.name} Transcription", 0)
@@ -190,51 +189,79 @@ if st.session_state.transcription and st.session_state.current_file:
     doc_io = io.BytesIO()
     doc.save(doc_io)
     doc_io.seek(0)
+    return doc_io
 
-    # Get the current working directory
-    current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Construct the path to the font file relative to the current directory
-    font_path = os.path.join(current_dir, 'DejaVuSansCondensed.ttf')
+# Function to generate PDF document
+# def generate_pdf():
+#     # Get the current working directory
+#     current_dir = os.path.dirname(os.path.abspath(__file__))
+#
+#     # Construct the path to the font file relative to the current directory
+#     font_path = os.path.join(current_dir, 'DejaVuSansCondensed.ttf')
+#
+#     # Create PDF document
+#     pdf = FPDF()
+#     pdf.add_page()
+#     pdf.add_font("DejaVu", "", font_path, uni=True)
+#     pdf.set_font("DejaVu", size=20)
+#     pdf.cell(200, 10, txt=f"{st.session_state.current_file.name} Transcription", ln=True, align='C')
+#
+#     pdf.set_font("DejaVu", size=12)
+#     pdf.cell(200, 10, txt="", ln=True, align='C')
+#     pdf.multi_cell(0, 10, st.session_state.transcription)
+#
+#     # Save PDF to BytesIO
+#     pdf_output = pdf.output(dest="S").encode("latin1")  # Convert to bytes compatible with PDF
+#     pdf_io = io.BytesIO(pdf_output)
+#     pdf_io.seek(0)
+#     return pdf_io
 
-    # Create PDF document
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.add_font("DejaVu", "", font_path, uni=True)
-    pdf.set_font("DejaVu", size=20)
-    pdf.cell(200, 10, txt=f"{st.session_state.current_file.name} Transcription", ln=True, align='C')
 
-    pdf.set_font("DejaVu", size=12)
-    pdf.cell(200, 10, txt="", ln=True, align='C')
-    pdf.multi_cell(0, 10, st.session_state.transcription)
+# Display download buttons only if transcription exists in session state
+# if st.session_state.transcription and st.session_state.current_file:
+#     st.success("Transcription completed!")
+#
+#     # Create centered columns for download buttons
+#     col1, col2 = st.columns(2)
+#
+#     with col1:
+#         # Download Word button
+#         doc_io = generate_word()  # Generate Word file
+#         st.download_button(
+#             label="📝 Download Word",
+#             data=doc_io,
+#             file_name=f"{st.session_state.current_file.name}_transcription.docx",
+#             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+#             use_container_width=True
+#         )
+#
+#     with col2:
+#         # Download PDF button
+#         pdf_io = generate_pdf()  # Generate PDF file
+#         st.download_button(
+#             label="📄 Download PDF",
+#             data=pdf_io,
+#             file_name=f"{st.session_state.current_file.name}_transcription.pdf",
+#             mime="application/pdf",
+#             use_container_width=True
+#         )
 
-    # Salvare PDF în BytesIO
-    pdf_output = pdf.output(dest="S").encode("latin1")  # Convertire la bytes compatibili cu PDF
-    pdf_io = io.BytesIO(pdf_output)
-    pdf_io.seek(0)
+# Display download buttons only if transcription exists in session state
 
-    # Create centered columns
-    col1, col2 = st.columns(2)
 
-    with col1:
-        st.download_button(
+if st.session_state.transcription and st.session_state.current_file:
+    st.success("Transcription completed!")
+
+    # Download Word button
+    doc_io = generate_word()  # Generate Word file
+    st.download_button(
             label="📝 Download Word",
             data=doc_io,
             file_name=f"{st.session_state.current_file.name}_transcription.docx",
             mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             use_container_width=True
-        )
-
-    with col2:
-        st.download_button(
-            label="📄 Download PDF",
-            data=pdf_io,
-            file_name=f"{st.session_state.current_file.name}_transcription.pdf",
-            mime="application/pdf",
-            use_container_width=True
-        )
-
-
+    )
 
 
 # Adaugă spațiu înainte de secțiunea de contact
