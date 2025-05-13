@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="more confident frontend.py" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="better updating pic from drive" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +68,7 @@
       <workItem from="1743299199334" duration="1163000" />
       <workItem from="1743300457170" duration="1797000" />
       <workItem from="1743321892574" duration="37000" />
-      <workItem from="1747129786395" duration="2302000" />
+      <workItem from="1747129786395" duration="2607000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -326,14 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1747132078793</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="better updating pic from drive">
+      <option name="closed" value="true" />
+      <created>1747132375822</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1747132375822</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working - to try on internet" />
     <MESSAGE value="/upload added" />
     <MESSAGE value="google ads added" />
     <MESSAGE value="some push" />
@@ -358,6 +365,7 @@
     <MESSAGE value="too good streamlit wants explicit m4a to work" />
     <MESSAGE value="better debugging prints" />
     <MESSAGE value="more confident frontend.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="more confident frontend.py" />
+    <MESSAGE value="better updating pic from drive" />
+    <option name="LAST_COMMIT_MESSAGE" value="better updating pic from drive" />
   </component>
 </project>
