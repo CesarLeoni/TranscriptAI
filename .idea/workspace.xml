@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="added layer of formatting the text from chatgpt llm">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/backend.py" afterDir="false" />
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="too good streamlit wants explicit m4a to work">
       <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
       <workItem from="1743299199334" duration="1163000" />
       <workItem from="1743300457170" duration="1797000" />
       <workItem from="1743321892574" duration="37000" />
-      <workItem from="1747129786395" duration="374000" />
+      <workItem from="1747129786395" duration="1173000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -298,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743302247294</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added functionality for working m4a file. while deleting the message that tells the user m4a is available. we have to wait and see">
+      <option name="closed" value="true" />
+      <created>1747130328526</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747130328526</updated>
+    </task>
+    <task id="LOCAL-00030" summary="too good streamlit wants explicit m4a to work">
+      <option name="closed" value="true" />
+      <created>1747130959387</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747130959387</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +342,8 @@
     <MESSAGE value="relative path for font again again" />
     <MESSAGE value="simpler front that actually works hopefully" />
     <MESSAGE value="added layer of formatting the text from chatgpt llm" />
-    <option name="LAST_COMMIT_MESSAGE" value="added layer of formatting the text from chatgpt llm" />
+    <MESSAGE value="added functionality for working m4a file. while deleting the message that tells the user m4a is available. we have to wait and see" />
+    <MESSAGE value="too good streamlit wants explicit m4a to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="too good streamlit wants explicit m4a to work" />
   </component>
 </project>
