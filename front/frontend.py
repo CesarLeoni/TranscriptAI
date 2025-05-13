@@ -269,9 +269,6 @@ if st.session_state.transcription and st.session_state.current_file:
 # Adaugă spațiu înainte de secțiunea de contact
 st.markdown("<br><br>", unsafe_allow_html=True)
 
-# Afișează un mesaj de avertizare
-st.warning("This is a beta version of this app. Feel free to reach out with suggestions or questions.")
-
 # Profile picture URL (replace with actual image URL)
 profile_image_url = "https://leoni-cesar-portfolio.netlify.app/assets/cesar.webp"
 
@@ -336,3 +333,5 @@ with col2:
 
     st.markdown("</div>", unsafe_allow_html=True)
 
+# Afișează un mesaj de avertizare
+st.info("This is a beta version of this app. Feel free to reach out with suggestions or questions.")

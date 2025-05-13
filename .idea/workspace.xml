@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="too good streamlit wants explicit m4a to work">
-      <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
-    </list>
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="better debugging prints" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +68,7 @@
       <workItem from="1743299199334" duration="1163000" />
       <workItem from="1743300457170" duration="1797000" />
       <workItem from="1743321892574" duration="37000" />
-      <workItem from="1747129786395" duration="1173000" />
+      <workItem from="1747129786395" duration="1902000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -312,14 +310,21 @@
       <option name="project" value="LOCAL" />
       <updated>1747130959387</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="better debugging prints">
+      <option name="closed" value="true" />
+      <created>1747131686972</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747131686972</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="changes" />
     <MESSAGE value="working - to try on internet" />
     <MESSAGE value="/upload added" />
@@ -344,6 +349,7 @@
     <MESSAGE value="added layer of formatting the text from chatgpt llm" />
     <MESSAGE value="added functionality for working m4a file. while deleting the message that tells the user m4a is available. we have to wait and see" />
     <MESSAGE value="too good streamlit wants explicit m4a to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="too good streamlit wants explicit m4a to work" />
+    <MESSAGE value="better debugging prints" />
+    <option name="LAST_COMMIT_MESSAGE" value="better debugging prints" />
   </component>
 </project>
