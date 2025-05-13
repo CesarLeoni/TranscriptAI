@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="simpler front that actually works hopefully">
+    <list default="true" id="bbab32be-fc2e-44ec-97f2-947872e1c445" name="Changes" comment="added layer of formatting the text from chatgpt llm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/back/backend.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/front/frontend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,9 @@
       <workItem from="1743151750287" duration="3354000" />
       <workItem from="1743185421000" duration="6866000" />
       <workItem from="1743299199334" duration="1163000" />
-      <workItem from="1743300457170" duration="1503000" />
+      <workItem from="1743300457170" duration="1797000" />
+      <workItem from="1743321892574" duration="37000" />
+      <workItem from="1747129786395" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -287,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743301933239</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added layer of formatting the text from chatgpt llm">
+      <option name="closed" value="true" />
+      <created>1743302247294</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1743302247294</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +327,7 @@
     <MESSAGE value="relative path for font again" />
     <MESSAGE value="relative path for font again again" />
     <MESSAGE value="simpler front that actually works hopefully" />
-    <option name="LAST_COMMIT_MESSAGE" value="simpler front that actually works hopefully" />
+    <MESSAGE value="added layer of formatting the text from chatgpt llm" />
+    <option name="LAST_COMMIT_MESSAGE" value="added layer of formatting the text from chatgpt llm" />
   </component>
 </project>

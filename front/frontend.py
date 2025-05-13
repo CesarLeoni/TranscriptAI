@@ -136,7 +136,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Upload the audio file
-uploaded_file = st.file_uploader("Upload an audio file", type=["mp3", "wav", "m4a"])
+uploaded_file = st.file_uploader("Upload an audio file", type=["mp3", "wav"])
 
 # Clear transcription if a new file is uploaded
 if uploaded_file and uploaded_file != st.session_state.current_file:

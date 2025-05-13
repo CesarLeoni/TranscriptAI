@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 import io
 import uuid
 from datetime import datetime
+import subprocess
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -36,6 +38,14 @@ def clean_text_with_gpt(text):
     )
     response = chat_completion.choices[0].message.content.strip()
     return response
+
+
+def convert_to_wav(input_path: str, output_path: str):
+    subprocess.run([
+        'ffmpeg', '-y', '-i', input_path,
+        '-ar', '16000', '-ac', '1',
+        '-c:a', 'pcm_s16le', output_path
+    ], check=True)
 
 
 @app.get("/")
@@ -75,12 +85,20 @@ async def upload_audio(file: UploadFile = File(...)):
         # Debugging: Log type of object passed to Whisper API
         print(f"Passing {type(file_content)} to Whisper API")
 
-        # Call the OpenAI Whisper API
-        with open(file_path, "rb") as f:
+        # If it's an .m4a file, convert it to .wav
+        if file_extension == "m4a":
+            wav_path = file_path.replace(".m4a", ".wav")
+            convert_to_wav(file_path, wav_path)
+            audio_path_to_send = wav_path
+        else:
+            audio_path_to_send = file_path
+
+        # Call the Whisper API
+        with open(audio_path_to_send, "rb") as f:
             response = client.audio.transcriptions.create(
                 model="whisper-1",
                 file=f,
-                response_format="verbose_json"  # Request verbose JSON response
+                response_format="verbose_json"
             )
 
         # Extract the transcribed text
@@ -101,6 +119,10 @@ async def upload_audio(file: UploadFile = File(...)):
         # Delete the file after processing
         if os.path.exists(file_path):
             os.remove(file_path)
+
+        # Also delete the .wav version if it was created
+        if file_extension == "m4a" and os.path.exists(wav_path):
+            os.remove(wav_path)
 
         print("Temporary audio files deleted")
         # Save the file or perform operations (e.g., using Whisper API)
