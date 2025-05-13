@@ -270,7 +270,8 @@ if st.session_state.transcription and st.session_state.current_file:
 st.markdown("<br><br>", unsafe_allow_html=True)
 
 # Profile picture URL (replace with actual image URL)
-profile_image_url = "https://leoni-cesar-portfolio.netlify.app/assets/cesar.webp"
+# profile_image_url = "https://leoni-cesar-portfolio.netlify.app/assets/cesar.webp"
+profile_image_url = "https://drive.google.com/file/d/1ohewW1sO-K_rh_3aZ1aSzdPZgiNzJmu5/view"
 
 # Create two columns for the profile picture and links
 col1, col2 = st.columns([1, 2])  # Adjust width ratio as needed
